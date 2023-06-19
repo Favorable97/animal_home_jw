@@ -9,11 +9,11 @@
                 class="hidden-md-and-up"
             ></v-app-bar-nav-icon>
             <v-app-bar-title app class="text-uppercase grey--text">
-                <router-link style="cursor: pointer;" to="/team" tag="span">
+                <router-link style="cursor: pointer;" to="/" tag="span">
                     <v-icon>mdi-dog</v-icon>
                     <v-icon>mdi-cat</v-icon>
                     <span>
-                        <span class="font-weight-light">Animal Home</span>
+                        <span class="red--text">Animal Home</span>
                     </span>
                 </router-link>
                 
@@ -30,13 +30,13 @@
                     <span>{{link.text}}</span>
                 </v-btn>
                 
-                <v-btn 
+                <!-- <v-btn 
                     text
                     color="grey"
                 >
                     <span>Sign Out</span>
                     <v-icon right>mdi-exit-to-app</v-icon>
-                </v-btn>
+                </v-btn> -->
             </v-toolbar-items>
         </v-app-bar>
         <v-navigation-drawer
@@ -73,8 +73,7 @@ export default {
                 { icon: 'mdi-dog', text: 'Наши собачки', route: '/dogs' },
                 { icon: 'mdi-cat', text: 'Наши кошечки', route: '/cat' },
                 { icon: 'mdi-information', text: 'О нас', route: '/about' }
-            ],
-            mainLink: '/team'
+            ]
         }
     }
 }

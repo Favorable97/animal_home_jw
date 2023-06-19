@@ -7,7 +7,7 @@ const routes = [
   {
     path: '/dashboard',
     name: 'dashboard',
-    component: () => import('../components/DashboardApp.vue')
+    component: () => import('../components/AppHome.vue')
   },
   {
     path: '/projects',
@@ -25,7 +25,7 @@ const routes = [
   {
     path: '*',
     name: 'default',
-    component: () => import('../components/DashboardApp.vue')
+    component: () => import('../components/AppHome.vue')
   }
 ]
 
