@@ -5,8 +5,8 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/dashboard',
-    name: 'dashboard',
+    path: '/',
+    name: 'home',
     component: () => import('../components/AppHome.vue')
   },
   {
@@ -16,6 +16,11 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import('../components/ListProjects.vue')
+  },
+  {
+    path: '/cats',
+    name: 'cats',
+    component: () => import('../components/CatsApp.vue')
   },
   {
     path: '/team',

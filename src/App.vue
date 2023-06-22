@@ -7,17 +7,17 @@
     <v-main class="mx-4 mb-4">
       <router-view></router-view>
     </v-main>
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </v-app>
 </template>
 
 <script>
-import AppFooter from './components/AppFooter.vue';
+/* import AppFooter from './components/AppFooter.vue'; */
 import AppHeader from './components/AppHeader.vue';
 
 export default {
     name: "App",
     data: () => ({}),
-    components: { AppHeader, AppFooter }
+    components: { AppHeader/* , AppFooter */ }
 };
 </script>

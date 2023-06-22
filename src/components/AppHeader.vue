@@ -71,7 +71,7 @@ export default {
             links: [
                 { icon: 'mdi-home', text: 'Главная', route: '/' },
                 { icon: 'mdi-dog', text: 'Наши собачки', route: '/dogs' },
-                { icon: 'mdi-cat', text: 'Наши кошечки', route: '/cat' },
+                { icon: 'mdi-cat', text: 'Наши кошечки', route: '/cats' },
                 { icon: 'mdi-information', text: 'О нас', route: '/about' }
             ]
         }
