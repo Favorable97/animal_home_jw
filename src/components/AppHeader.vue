@@ -8,13 +8,14 @@
                 @click="drawer=!drawer"
                 class="hidden-md-and-up"
             ></v-app-bar-nav-icon>
-            <v-app-bar-title app class="text-uppercase grey--text">
+            <v-app-bar-title app class="red--text display-1">
                 <router-link style="cursor: pointer;" to="/" tag="span">
-                    <v-icon>mdi-dog</v-icon>
-                    <v-icon>mdi-cat</v-icon>
-                    <span>
-                        <span class="red--text">Animal Home</span>
-                    </span>
+                    <v-icon large>mdi-dog</v-icon>
+                    <v-icon large>mdi-cat</v-icon>
+                    {{ appTitle }}
+                    <!-- <span>
+                        <span>Animal Home</span>
+                    </span> -->
                 </router-link>
                 
             </v-app-bar-title>
@@ -67,12 +68,15 @@ export default {
     name: 'HeaderApp',
     data() {
         return {
+            appTitle: 'Animal Home',
             drawer: false,
             links: [
-                { icon: 'mdi-home', text: 'Главная', route: '/' },
+                //{ icon: 'mdi-home', text: 'Главная', route: '/' },
                 { icon: 'mdi-dog', text: 'Наши собачки', route: '/dogs' },
                 { icon: 'mdi-cat', text: 'Наши кошечки', route: '/cats' },
-                { icon: 'mdi-information', text: 'О нас', route: '/about' }
+                { icon: 'mdi-store', text: 'Магазин', route: '/store' },
+                { icon: 'mdi-cart', text: 'Корзина', route: '/cart' },
+                { icon: 'mdi-information', text: 'О нас', route: '/about' },
             ]
         }
     }

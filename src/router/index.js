@@ -23,6 +23,11 @@ const routes = [
     component: () => import('../components/CatsApp.vue')
   },
   {
+    path: '/dogs',
+    name: 'cats',
+    component: () => import('../components/DogsApp.vue')
+  },
+  {
     path: '/team',
     name: 'team',
     component: () => import('../components/TeamProject.vue')

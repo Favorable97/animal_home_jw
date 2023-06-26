@@ -29,34 +29,6 @@
                     <v-radio class="mb-2" label="Девочка" value="2"></v-radio>
                     <v-radio class="mb-2" label="Мальчик" value="3"></v-radio>
                 </v-radio-group>
-                <!-- <v-list-item>
-                    <v-list-item-content>
-                        
-                    </v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                        <v-list-item-content>
-                            <v-btn>
-                                Кошки
-                            </v-btn> 
-                        </v-list-item-content>
-                </v-list-item>
-                    <v-list-item>
-                        <v-list-item-content>
-                            <v-btn>
-                                Старые кошки
-                            </v-btn>
-                        </v-list-item-content>
-                    </v-list-item> -->
-                <!-- <v-list-item-group>
-                    <v-list-item>
-                        <v-list-item-content>
-                            <v-btn>Котята</v-btn>
-                        </v-list-item-content>
-                    </v-list-item>
-                    
-                    
-                </v-list-item-group> -->
                 <v-subheader class="subtitle-1">Выберите возраст кошки:</v-subheader>
                 <v-radio-group row class="mt-1" v-model="filters.age" mandatory>
                     <v-radio class="mb-2" label="Без разницы" value="1"></v-radio>
