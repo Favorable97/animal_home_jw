@@ -6,7 +6,7 @@
             class="mt-5"
             v-show="!showFilter"
         >
-            <v-btn text @click="IsShowFilter">
+            <v-btn text @click="showFilter = !showFilter">
                 <v-icon>mdi-filter</v-icon>
                 Фильтр
             </v-btn>
@@ -17,7 +17,7 @@
             v-show="showFilter"
         >
             <v-card flat class="text-right">
-                <v-icon @click="IsShowFilter">mdi-close</v-icon>
+                <v-icon @click="showFilter = !showFilter">mdi-close</v-icon>
             </v-card>
             <v-card class="text-center " flat height="20">
                 <span class="grey--text">Фильтр</span>
@@ -47,7 +47,7 @@
         </v-col>
         <v-divider vertical v-show="showFilter"></v-divider>
         <v-col
-            cols="this.col"
+            :cols="this.showFilter ? 10 : 12"
             class="text-center"
         >
         <h1 class="mt-5 mb-6 text-center">Наши кошки</h1>
@@ -88,10 +88,6 @@ export default {
             })
     },
     methods: {
-        IsShowFilter() {
-            this.showFilter = !this.showFilter
-            this.col = this.showFilter ? 10 : 12
-        },
         ResetFilter() {
             for (let key in this.filters) {
                 this.filters[key] = 1

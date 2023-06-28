@@ -24,8 +24,13 @@ const routes = [
   },
   {
     path: '/dogs',
-    name: 'cats',
+    name: 'dogs',
     component: () => import('../components/DogsApp.vue')
+  },
+  {
+    path: '/about',
+    name: 'about',
+    component: () => import('../components/AppAbout.vue')
   },
   {
     path: '/team',

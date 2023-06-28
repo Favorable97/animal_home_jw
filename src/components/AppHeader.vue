@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="header">
         <v-app-bar 
             flat
             app
