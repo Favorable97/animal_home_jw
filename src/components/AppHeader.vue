@@ -6,7 +6,7 @@
         >
             <v-app-bar-nav-icon 
                 @click="drawer=!drawer"
-                class="hidden-md-and-up"
+                class="hidden-lg-and-up"
             ></v-app-bar-nav-icon>
             <v-app-bar-title app class="red--text display-1">
                 <router-link style="cursor: pointer;" to="/" tag="span">
@@ -20,7 +20,7 @@
                 
             </v-app-bar-title>
             <v-spacer></v-spacer>
-            <v-toolbar-items class="hidden-sm-and-down">
+            <v-toolbar-items class="hidden-md-and-down">
                 <v-btn 
                     text
                     v-for="link in links" 

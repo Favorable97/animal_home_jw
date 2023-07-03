@@ -12,7 +12,10 @@
             </v-btn>
         </v-col>
         <v-col
-            cols="2"
+            cols="6"
+            lg="2"
+            md="3"
+            sm="10"
             class="mt-5"
             v-show="showFilter"
         >
